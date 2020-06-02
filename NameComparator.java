@@ -1,23 +1,22 @@
 package com.company;
 import java.util.Comparator;
-import java.util.TreeSet;
 
-public class Workspace {
+public class NameComparator {
     static int time;
     static int pages;
     int Priority;
     int randomX;
 
 
-    public Workspace() {
+    public NameComparator() {
 
     }
 
     static class StringComparator1 implements Comparator<String> {
 
         public int compare(String h1, String h2) {
-            int t1 = Workspace.returner(h1);
-            int t2 = Workspace.returner(h2);
+            int t1 = NameComparator.returner(h1);
+            int t2 = NameComparator.returner(h2);
             for (int i = 0; i < h1.length(); i++) {
                 while (h1.charAt(t1 + i) == h2.charAt(t2 + i)) {
                     i++;
@@ -50,8 +49,8 @@ public class Workspace {
     static class StringComparator2 implements Comparator<String> {
 
         public int compare(String h1, String h2) {
-            int t1 = Workspace.returner(h1);
-            int t2 = Workspace.returner(h2);
+            int t1 = NameComparator.returner(h1);
+            int t2 = NameComparator.returner(h2);
             for (int i = 0; i < h1.length(); i++) {
                 while (h1.charAt(t1 + i) == h2.charAt(t2 + i)) {
                     i++;
