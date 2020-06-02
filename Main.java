@@ -1,8 +1,6 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.PriorityQueue;
-import java.util.TreeSet;
 
 public class Main {
 
@@ -28,9 +26,20 @@ public class Main {
         myList.add(Task7);
         myList.add(Task8);
 
-        Workspace.StringComparator2 myComparator = new Workspace.StringComparator2();
-        myList.sort(myComparator);
+        NameComparator.StringComparator1 myComparator1 = new NameComparator.StringComparator1();
+        myList.sort(myComparator1);
+        System.out.println(myList);
 
-       System.out.println(myList);
+        NameComparator.StringComparator2 myComparator2 = new NameComparator.StringComparator2();
+        myList.sort(myComparator2);
+        System.out.println(myList);
+
+        NameComparator.StringComparator3 myComparator3 = new NameComparator.StringComparator3();
+        myList.sort(myComparator3);
+        System.out.println(myList);
+
+        NameComparator.StringComparator4 myComparator4 = new NameComparator.StringComparator4();
+        myList.sort(myComparator4);
+        System.out.println(myList);
     }
 }
