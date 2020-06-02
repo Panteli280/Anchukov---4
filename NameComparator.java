@@ -13,7 +13,3 @@ public class NameComparator {
         return counter;
     }
 }
-
-
-
-
