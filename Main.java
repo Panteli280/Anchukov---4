@@ -26,19 +26,19 @@ public class Main {
         myList.add(Task7);
         myList.add(Task8);
 
-        NameComparator.StringComparator1 myComparator1 = new NameComparator.StringComparator1();
+        StringComparator1 myComparator1 = new StringComparator1();
         myList.sort(myComparator1);
         System.out.println(myList);
 
-        NameComparator.StringComparator2 myComparator2 = new NameComparator.StringComparator2();
+        StringComparator2 myComparator2 = new StringComparator2();
         myList.sort(myComparator2);
         System.out.println(myList);
 
-        NameComparator.StringComparator3 myComparator3 = new NameComparator.StringComparator3();
+        StringComparator3 myComparator3 = new StringComparator3();
         myList.sort(myComparator3);
         System.out.println(myList);
 
-        NameComparator.StringComparator4 myComparator4 = new NameComparator.StringComparator4();
+        StringComparator4 myComparator4 = new StringComparator4();
         myList.sort(myComparator4);
         System.out.println(myList);
     }
